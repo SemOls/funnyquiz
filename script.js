@@ -94,7 +94,11 @@ function timer(){
 
         function anSwer () {
    
-            Swal.fire('Хочешь узнать правильный ответ?');
+              Swal.fire(
+                'Догадался?',
+                'Хочешь узнать правильный ответ?',
+                'question'
+              )
             countdown.style.display="none";
             answer.style.display="block";
             document.querySelector("#player").pause();
